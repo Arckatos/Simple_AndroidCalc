@@ -1,0 +1,201 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".CalculatorActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0">
+        <TextView
+            android:id="@+id/digitDisplay"
+            android:text="@string/digit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/button7"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/button7"
+            android:onClick="enterDigit"/>
+        <Button
+            android:id="@+id/button8"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/button8"
+            android:onClick="enterDigit"/>
+        <Button
+            android:id="@+id/button9"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/button9"
+            android:onClick="enterDigit"/>
+
+        <Button
+            android:id="@+id/buttonDiv"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/buttonDiv"
+            android:onClick="enterOperation"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/button4"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/button4"
+            android:onClick="enterDigit"/>
+        <Button
+            android:id="@+id/button5"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/button5"
+            android:onClick="enterDigit"/>
+        <Button
+            android:id="@+id/button6"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/button6"
+            android:onClick="enterDigit"/>
+
+        <Button
+            android:id="@+id/buttonMul"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/buttonMult"
+            android:onClick="enterOperation"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/button1"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/button1"
+            android:onClick="enterDigit"/>
+        <Button
+            android:id="@+id/button2"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/button2"
+            android:onClick="enterDigit"/>
+        <Button
+            android:id="@+id/button3"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/button3"
+            android:onClick="enterDigit"/>
+
+        <Button
+            android:id="@+id/buttonNeg"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/buttonNeg"
+            android:onClick="enterOperation"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/button0"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/button0"
+            android:onClick="enterDigit"/>
+        <Button
+            android:id="@+id/buttonDot"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/buttonDot"
+            android:onClick="enterDigit"/>
+        <Button
+            android:id="@+id/buttonEqu"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/buttonEqu"
+            android:onClick="enterEquals"/>
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/buttonAdd"
+            android:onClick="enterOperation"/>
+
+
+    </LinearLayout>
+    <!--<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_weight="0">
+        <TextView
+            android:id="@+id/oldDisplay"
+            android:text="@string/digit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:singleLine="true"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0">
+        <TextView
+            android:id="@+id/newDisplay"
+            android:text="@string/digit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:singleLine="true"/>
+    </LinearLayout>-->
+
+
+</LinearLayout>
