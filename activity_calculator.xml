@@ -172,30 +172,4 @@
 
 
     </LinearLayout>
-    <!--<LinearLayout android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:layout_weight="0">
-        <TextView
-            android:id="@+id/oldDisplay"
-            android:text="@string/digit"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="right"
-            android:singleLine="true"/>
-    </LinearLayout>
-    <LinearLayout android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_weight="0">
-        <TextView
-            android:id="@+id/newDisplay"
-            android:text="@string/digit"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="right"
-            android:singleLine="true"/>
-    </LinearLayout>-->
-
-
 </LinearLayout>
